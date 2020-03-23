@@ -1,24 +1,24 @@
+
 import os
-import warnings
 from django.utils.translation import ugettext_lazy as _
 from os.path import dirname
-
-warnings.simplefilter('error', DeprecationWarning)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 
+
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '3%)4ya)u3q4!b6gtu*gh(wxzz@0=vg^k=6b!$3jd5t)c4^*rbg'
+SECRET_KEY = '^n9&j4ytyxa3=zlzs29!+zl+!3*kn)&-g=@mf@ds04yjgez&fw'
 
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
 ALLOWED_HOSTS = []
 
-SITE_ID = 1
 
 # Application definition
 
@@ -29,17 +29,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     # Vendor apps
     'bootstrap4',
-    'rest_framework',
     'corsheaders',  
 
     # Application apps
-    'main',
     'accounts',
-    'Atlus',
-    #'Boomerang',
+    'Cataract',
 ]
 
 MIDDLEWARE = [
@@ -76,11 +72,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'main.wsgi.application'
 
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = os.path.join(CONTENT_DIR, 'tmp/emails')
-EMAIL_HOST_USER = 'petkar.vipul@gmail.com'
-DEFAULT_FROM_EMAIL = 'test@example.com'
 
+# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -95,7 +89,7 @@ DATABASES = {
 
 
 # Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -129,17 +123,23 @@ if DISABLE_USERNAME:
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 
-USE_I18N = True
-USE_L10N = True
-LANGUAGE_CODE = 'en'
-LANGUAGES = [
-    ('en', _('English')),
-    ('ru', _('Russian')),
-    ('zh-Hans', _('Simplified Chinese')),
-]
+
+# Internationalization
+# https://docs.djangoproject.com/en/3.0/topics/i18n/
+
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
+
+USE_I18N = True
+
+USE_L10N = True
+
 USE_TZ = True
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_ROOT = os.path.join(CONTENT_DIR, 'static')
 STATIC_URL = '/static/'
