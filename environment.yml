@@ -1,0 +1,36 @@
+name: cataract
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - asgiref=3.2.3=py_0
+  - beautifulsoup4=4.8.2=py38_0
+  - ca-certificates=2020.1.1=0
+  - certifi=2019.11.28=py38_0
+  - django=3.0.3=py_0
+  - django-bootstrap4=1.1.1=py_0
+  - krb5=1.16.4=hc04afaa_0
+  - libpq=11.2=h3235a2c_0
+  - openssl=1.1.1=he774522_0
+  - pip=20.0.2=py38_1
+  - psycopg2=2.8.4=py38h7a1dbc1_0
+  - python=3.8.2=h5fd99cc_5_cpython
+  - python_abi=3.8=1_cp38
+  - pytz=2019.3=py_0
+  - setuptools=46.0.0=py38_0
+  - soupsieve=2.0=py_0
+  - sqlite=3.30.1=hfa6e2cd_0
+  - sqlparse=0.3.0=py_0
+  - tk=8.6.8=hfa6e2cd_0
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.16.27012=hf0eaf9b_1
+  - wheel=0.34.2=py38_0
+  - wincertstore=0.2=py38_1003
+  - zlib=1.2.11=vc14h1cdd9ab_1
+  - pip:
+    - autopep8==1.5
+    - django-cors-headers==3.2.1
+    - pycodestyle==2.5.0
+prefix: C:\Users\Acer\.conda\envs\cataract
+
