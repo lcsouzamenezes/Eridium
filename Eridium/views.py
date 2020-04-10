@@ -44,7 +44,7 @@ def file_storage_to_db(request):
 		predict(context['filename'])
 
 		for name in os.listdir(file_path):
-			if name != 'favicon.png' and name != 'LibrusLogo.png' and name != context['filename']:
+			if name not in ['favicon.png', 'LibrusLogo.png', context['filename'], 'bak.svg']:
 				p = "/".join([file_path,name])
 				os.remove(p)
 

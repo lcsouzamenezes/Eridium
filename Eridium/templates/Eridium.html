@@ -1,30 +1,30 @@
 {% extends 'layouts/default/page.html' %} {% load bootstrap4 %} {% load i18n %} {% block content %} {% load static %}
 
-<h1>Eridium</h1>
-<div class="card dark-bg bg-dark container mt-3">
-    <h2>
+<h2 class="black">Eridium</h2>
+<div class="card container mt-3 shadow-lg p-3 mb-5 bg-white rounded">
+    <h2 class="text-dark">
         <br /> File Upload
-        <hr class="bg-light" />
+        <hr />
     </h2>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        <p>Uploaded File:</p>
-        <div class="custom-file mb-3">
-            <input type="file" class="custom-file-input" id="customFile" name="myFile" accept="image/*" onchange="loadFile(event)" />
-            <div class="form-group">
+        <p class="text-dark">Uploaded File:</p>
+        <div class="custom-file mb-3 text-dark">
+            <input type="file" class="text-dark custom-file-input" id="customFile" name="myFile" accept="image/*" onchange="loadFile(event)" />
+            <div class="form-group text-dark">
             </div>
-            <label class="custom-file-label" for="customFile">Choose file</label>
+            <label class="custom-file-label text-dark" for="customFile">Choose file</label>
         </div>
 
         <div class="mt-3">
             <button type="submit" class="btn btn-primary">Submit
-            </button><br /> {% if label %}
+            </button><br /><br /> {% if label %}
             <h2>
                 {{ label }}
             </h2>
             {% endif %}
             <img id="output" height="30%" /> {% if context %}
-            <img src="{% static context %}" /> {% endif %}
+            <img src="{% static context %}" /><br />{% endif %}
         </div>
     </form>
 </div>

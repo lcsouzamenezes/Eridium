@@ -1,39 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 html {
-    height: 100%;
-}
-
-text {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: black;
-}
-
-body {
-    background: #03001e;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #d12fa6, #6502a7, #03001e);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(330deg, #d12fa6, #6502a7, #03001e);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#navbarr {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    padding: 20px;
-    font-size: 14px;
-}
-
-a,
-a:hover,
-a:focus {
-    text-decoration: none;
-    transition: all 0.3s;
+    height: 150%;
 }
 
 .navbar-btn {
@@ -52,6 +19,47 @@ a:focus {
     line-height: 1.35em;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.black {
+    color: rgb(0, 0, 0);
+    font-size: 3.5rem;
+}
+
+text {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+}
+
+body {
+    background: #03001e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #d12fa6, #6502a7, #03001e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: url('../img/bak.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#navbarr {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 .line {
@@ -101,51 +109,4 @@ a:focus {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-
-/* ---------------------------------------------------
-                      Atlus Box
------------------------------------------------------ */
-
-* {
-    box-sizing: border-box;
-    color: floralwhite;
-}
-
-#Atlus_ul {
-    list-style-type: none;
-    text-align: right;
-    width: 8cm;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
-
-.flex-container>div {
-    background-color: #353941;
-    width: auto;
-    padding: 1%;
-    text-align: center;
-}
-
-#Atlus {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-}
-
-#Atlus:nth-child(odd) {
-    color: rgb(241, 182, 237);
-}
-
-textarea {
-    color: #000000;
-    font-size: 16px;
-}
-
-.mes {
-    display: none;
 }
