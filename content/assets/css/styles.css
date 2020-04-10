@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 html {
-    height: 150%;
+    height: 100%;
 }
 
 text {
@@ -12,11 +12,11 @@ text {
 }
 
 body {
-    background: #ad5389;
+    background: #03001e;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient( to top, #3c1053, #ad5389);
+    background: -webkit-linear-gradient(to top, #d12fa6, #6502a7, #03001e);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient( to top, #3c1053, #ad5389);
+    background: linear-gradient(330deg, #d12fa6, #6502a7, #03001e);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
